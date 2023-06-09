@@ -66,6 +66,24 @@
             .b{
                 color :palevioletred
             }
+
+            table
+            /* 셀 사이의 경계를 한 줄로 */            
+            {
+                border-collapse: collapse;
+                /* 수평적 가운데 배치 */
+                margin: auto;
+            }
+
+            td, th
+            {
+                /* 경계선 */
+                border: 1px solid thistle;
+                padding: 10px;
+                /* 글자 가운데 정렬 */
+                text-align: center;
+            }
+            
      </style>
  </head>
  
@@ -129,7 +147,7 @@
          </tr>
 
          <tr>
-            <td>자료제공</td>
+            <td class="b">자료제공</td>
             <td colspan="2">JWP</td>
          </tr>
      </table>
