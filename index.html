@@ -20,74 +20,123 @@
      <meta charset="UTF-8">
      <!-- 제목 -->
      <title>˗ˋˏ°•୨❤나를 소개합니다❤୧•°ˎˊ˗</title>
+     <style>
+            h1{
+                /* 글자색을 분홍색으로
+                속성명과 속성값 사이에는 콜론(:)으로 */
+                color:pink;
+            }
+            
+            #hobby{
+                color :lightpink;
+            }
+
+            #food{
+                color :lightpink;
+            }
+
+            #http{
+                color :lightpink;
+            }
+
+            #url{
+                color :lightpink;
+            }
+
+            .hobby{
+                color :hotpink;
+            }
+
+            .food{
+                color :hotpink;
+            }
+            
+            .http{
+                color :hotpink;
+            }
+
+            .url{
+                color :hotpink;
+            }
+
+            .a{
+                color : hotpink;
+            }
+
+            .b{
+                color :palevioletred
+            }
+     </style>
  </head>
+ 
  <!-- 실제 홈페이지 내용이 들어가는 태그 -->
  <body>
      <!-- 주제, 제목을 나타냄(Heading) -->
      <!-- h1~h6까지 있으며 숫자가 클수록 글자의 크기는 작아진다 -->
-     <h1>*･☪·̩내 소개∘˚˳°∘°</h1>
+     <i><h1>*･☪·̩내 소개∘˚˳°∘°</h1></i>
+
      <!-- 그림 불러오기 src : 불러올 파일, alt : 그림 불러오기를 실패했을 때 대체되는 문자 -->
      <!-- src, alt과 같은 속성은 태그의 세부적인 정보를 제공한다 -->
      <img src="yeon_art.jpg" alt="그림 불러오기 실패">
-     <h2>₊*ෆ˚취미˚ෆ*₊</h2> 
+     <h2 id="hobby">₊*ෆ˚취미˚ෆ*₊</h2> 
      <!-- 순서가 없는 목록 -->
      <ul>
          <!-- 목록 (list) -->
-        <li>코딩</li> 
-        <li>공부</li>
-        <li>독서</li>
-        <li>청소</li>
+        <li class="hobby">코딩</li> 
+        <li class="hobby">공부</li>
+        <li class="hobby">독서</li>
+        <li class="hobby">청소</li>
      </ul>
  
-     <h2>₊*ෆ˚좋아하는 음식순위˚ෆ*₊</h2>
+     <h2 id="food">₊*ෆ˚좋아하는 음식순위˚ෆ*₊</h2>
      <ol>
-         <li>마라탕</li>
-         <li>꿔바로우</li>
-         <li>삼겹살</li>
+         <li class="food">마라탕</li>
+         <li class="food">꿔바로우</li>
+         <li class="food">삼겹살</li>
      </ol>
 
      <!-- 행을 먼저 만들고 열을 만든다 -->
-     <table>
+     <table id="http">
         <!-- 1행 -->
         <tr>
             <!-- <th> 본문을 설명해주는 셀 -->
-            <th>이름</th>
-            <th>주소</th>
-            <th>종류</th>
+            <th class="a">이름</th>
+            <th class="a">주소</th>
+            <th class="a">종류</th>
         </tr>
 
         <!-- 2행 -->
          <tr>
             <!-- <td> 본문(내용물)에 해당하는 셀 -->
-            <td>네이버</td>
+            <td class="b">네이버</td>
             <td>https://www.naver.com</td>
-            <td>포탈</td>
+            <td class="b">포탈</td>
          </tr>
 
          <!-- 3행 -->
          <tr>
-            <td>다음</td>
+            <td class="b">다음</td>
             <td>https://www.daum.net</td>
-            <td>포탈</td>
+            <td class="b">포탈</td>
          </tr>
 
          <!-- 4행 -->
          <tr>
-            <td>나무위키</td>
+            <td class="b">나무위키</td>
             <td>https://namu.wiki</td>
-            <td>위키백과</td>
+            <td class="b">위키백과</td>
          </tr>
      </table>
 
-     <h2>₊*ෆ˚내가 자주가는 사이트˚ෆ*₊</h2>
+     <h2 id="url">₊*ෆ˚내가 자주가는 사이트˚ෆ*₊</h2>
      <ul>
         <!-- <a> : 다른 곳으로 들어가기 위한 링크를 생성 -->
         <!-- href : 링크와 연결된 주소(url) -->
         <!-- target : 링크가 열리는 위치.
             속성값을 _blank로 하면 새창에서 열기 아무것도 안치면 현재창에서 열기 -->
-        <li><a href="https://www.naver.com" target="_blank">네이버</a></li>
-        <li>나무위키</li>
-        <li>깃허브</li>
+        <li class="url"><a href="https://www.naver.com" target="_blank">네이버</a></li>
+        <li class="url">나무위키</li>
+        <li class="url">깃허브</li>
      </ul>
  
  </body>
