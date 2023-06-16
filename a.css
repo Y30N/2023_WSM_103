@@ -1,4 +1,24 @@
+/* 전체 선택자 */
+*
+{
+    color: thistle;
+}
+
+/* 태그 선택자 */
 div
 {
-    color:thistle;
+    color:lightpink;
+}
+
+
+/* 클래스 선택자 */
+.fd
+{
+    color:violet;
+}
+
+/* id 선택자 */
+#s
+{
+    color:hotpink;
 }
